@@ -10,9 +10,11 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+use App\User;
 Route::get('/', function () {
-    return view('welcome');
+  $usuarios = User::all();
+dd($usuarios);
+  return view('welcome');
 });
 
 Auth::routes();
