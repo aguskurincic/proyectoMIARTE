@@ -1,7 +1,7 @@
-@extends('layouts.app')
+@extends('main')
 
 @section('content')
-<div class="container">
+<!-- <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
@@ -69,5 +69,35 @@
             </div>
         </div>
     </div>
+</div> -->
+
+<h1>Login</h1>
+<form action="{{ route('login') }}" method="post">
+  @crsf
+  <div class="form">
+      <div class="form-group-email">
+        <label for="email"></label>
+        <input type="email" name="email" class="form-control" id="email" placeholder="example@email.com">
+      </div>
+      <div class="form-group-password">
+        <label for="Password"></label>
+        <input type="password" class="form-control" id="Password" name="password" placeholder="Password">
+      </div>
+  </div>
+
+<!-- Buttons -->
+
+<div class="form-group">
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" id="gridCheck">
+    <label class="form-check-label" for="gridCheck">
+      Remember me
+    </label>
+  </div>
 </div>
+<div class="button">
+   <button type="submit" class="btn btn-primary">Sign in</button>
+</div>
+</form>
+
 @endsection

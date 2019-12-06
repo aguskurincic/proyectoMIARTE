@@ -14,7 +14,7 @@ class AddRolToUsersTable extends Migration
     public function up()
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->string('avatar', '300')->after('password');
+            $table->string('avatar', '300')->nullable()->after('password');
             $table->smallInteger('rol')->default(0)->after('avatar');
         });
     }
