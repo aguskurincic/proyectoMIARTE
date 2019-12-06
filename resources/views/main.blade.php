@@ -17,19 +17,29 @@
       <img class="logo" src="img/logo.png" alt="Logo">
       <nav class ="top_bar">
         <ul class="menu_bar">
-          <!-- SI EL USUARIO NO ESTA LOG -->
+        @guest
         <!-- <li class="botones"><a href="index.php">Home</a></li> -->
         <li class="botones"><a href="/register">Register</a></li>
         <li class="botones"><a href="/login">Login</a></li>
-        <li class="botones"><a href="#"><i class="fa fa-cart-plus"></i></i></a></li>
-        <!-- SI NO -->
+        @else
+        <li class="botones"><a href="/carrito"><i class="fa fa-cart-plus"></i></i></a></li>
           <div class="">
-            <img class="avatar" src="avatar/.jpg" alt="">
-            <span>Hola: NOMBRE USUARIO</span>
-            <a href="usuarios.php">ver usuarios</a>
+            <img class="avatar" src="storage/avatar/{{Auth::user()->avatar}}" alt="" style="width: 40px">
+            <span>Hola: {{Auth::user()->name}}</span>
           </div>
-          <a class="btn btn-danger" href="logout.php">Logout</a>
-        <!--  -->
+          <div class="">
+            <!-- <a class="btn btn-danger" href="{{ route('logout') }}">Logout</a> -->
+            <a class="btn btn-danger" href="{{ route('logout') }}"
+               onclick="event.preventDefault();
+                             document.getElementById('logout-form').submit();">
+                {{ __('Logout') }}
+            </a>
+
+            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                @csrf
+            </form>
+          </div>
+        @endif
       </ul>
     </nav>
       <!-- <nav class="main_bar">

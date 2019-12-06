@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Carrito;
+use Auth;
 use Illuminate\Http\Request;
+use App\Producto;
 
 class CarritoController extends Controller
 {
@@ -14,7 +16,9 @@ class CarritoController extends Controller
      */
     public function index()
     {
-        //
+      $items = Carrito::where("user_id", Auth::user()->id)->where("status", 0)->get();
+
+      return view('cart', compact('items'));
     }
 
     /**
@@ -35,7 +39,26 @@ class CarritoController extends Controller
      */
     public function store(Request $request)
     {
-        //
+      $product = Producto::find($request->id);
+      $ultimoCarrito = Carrito::latest('order_number')->first();
+      $item = new Carrito;
+      if($ultimoCarrito){
+        $numero = $ultimoCarrito + 1;
+      }else {
+        $numero = 0;
+      }
+
+      $item->name = $product->name;
+      $item->featured_img = $product->featured_img;
+      $item->quantity = 1;
+      $item->subtotal = $product->price * $item->quantity;
+      $item->price = $product->price;
+      $item->order_number = $numero + 1;
+      $item->user_id = Auth::user()->id;
+
+      $item->save();
+
+      return redirect('/');
     }
 
     /**
@@ -78,8 +101,12 @@ class CarritoController extends Controller
      * @param  \App\Carrito  $carrito
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Carrito $carrito)
+    public function destroy(Request $request)
     {
-        //
+        $producto = Producto::find($request->id);
+        $cart = Carrito::where('status', 0)->where('')
+        $cart->delete();
+
+        return redirect('/carrito');
     }
 }

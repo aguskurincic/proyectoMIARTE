@@ -73,7 +73,7 @@
 
 <h1>Login</h1>
 <form action="{{ route('login') }}" method="post">
-  @crsf
+  @csrf
   <div class="form">
       <div class="form-group-email">
         <label for="email"></label>

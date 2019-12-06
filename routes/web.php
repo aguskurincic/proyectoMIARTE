@@ -17,5 +17,6 @@ Auth::routes();
 //   return view("main");
 // });
 Route::get('/', 'HomeController@index');
-Route::post('/addtocart', 'CartController@store')->middleware('auth');
-Route::get('/cart', 'CartController@index')->middleware('auth');
+Route::post('/addtocarrito', 'CarritoController@store')->middleware('auth');
+Route::get('/carrito', 'CarritoController@index')->middleware('auth');
+Route::post('/sacarDeCarrito', CarritoController@);
