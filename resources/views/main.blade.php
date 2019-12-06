@@ -19,8 +19,8 @@
         <ul class="menu_bar">
           <!-- SI EL USUARIO NO ESTA LOG -->
         <!-- <li class="botones"><a href="index.php">Home</a></li> -->
-        <li class="botones"><a href="registro.php">Register</a></li>
-        <li class="botones"><a href="login.php">Login</a></li>
+        <li class="botones"><a href="/register">Register</a></li>
+        <li class="botones"><a href="/login">Login</a></li>
         <li class="botones"><a href="#"><i class="fa fa-cart-plus"></i></i></a></li>
         <!-- SI NO -->
           <div class="">
@@ -32,14 +32,14 @@
         <!--  -->
       </ul>
     </nav>
-      <nav class="main_bar">
+      <!-- <nav class="main_bar">
           <ul class="menu_productos">
           <li class="botones_productos"><a href="#">Ceramica</a></li>
           <li class="botones_productos"><a href="#">Cuadros</a></li>
           <li class="botones_productos"><a href="#">Muebles</a></li>
           <li class="botones_productos"><a href="#">Decoracion</a></li>
         </ul>
-      </nav>
+      </nav> -->
     </header>
   <body>
         @yield('content');

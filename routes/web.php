@@ -13,8 +13,9 @@
 
 Auth::routes();
 
-Route::get('/', function(){
-  return view("main");
-});
-
-Route::get('/carrito', 'CarritoController@index')->name('Carrito');
+// Route::get('/', function(){
+//   return view("main");
+// });
+Route::get('/', 'HomeController@index');
+Route::post('/addtocart', 'CartController@store')->middleware('auth');
+Route::get('/cart', 'CartController@index')->middleware('auth');
