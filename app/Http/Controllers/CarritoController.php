@@ -41,13 +41,14 @@ class CarritoController extends Controller
     {
       $product = Producto::find($request->id);
       $ultimoCarrito = Carrito::latest('order_number')->first();
+      // dd($ultimoCarrito);
       $item = new Carrito;
       if($ultimoCarrito){
-        $numero = $ultimoCarrito + 1;
+        $numero = $ultimoCarrito->order_number + 1;
       }else {
         $numero = 0;
       }
-
+        // $numero = 0;
       $item->name = $product->name;
       $item->featured_img = $product->featured_img;
       $item->quantity = 1;
@@ -58,7 +59,7 @@ class CarritoController extends Controller
 
       $item->save();
 
-      return redirect('/');
+      return redirect('/carrito');
     }
 
     /**
@@ -101,11 +102,11 @@ class CarritoController extends Controller
      * @param  \App\Carrito  $carrito
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Request $request)
+    public function destroy(Request $request )
     {
-        $producto = Producto::find($request->id);
-        $cart = Carrito::where('status', 0)->where('')
-        $cart->delete();
+        $item = Carrito::find($request->id);
+        // dd($item);
+        $item->delete();
 
         return redirect('/carrito');
     }

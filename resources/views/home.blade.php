@@ -15,6 +15,7 @@
           @csrf
           <input type="hidden" name="id" value="{{$product->id}}">
           <button type="submit" class="btn btn-success">Agregar al carrito</a>
+          
         </form>
 
 

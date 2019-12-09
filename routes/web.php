@@ -19,4 +19,4 @@ Auth::routes();
 Route::get('/', 'HomeController@index');
 Route::post('/addtocarrito', 'CarritoController@store')->middleware('auth');
 Route::get('/carrito', 'CarritoController@index')->middleware('auth');
-Route::post('/sacarDeCarrito', CarritoController@);
+Route::post('/sacarDeCarrito', 'CarritoController@destroy')->middleware("auth");
