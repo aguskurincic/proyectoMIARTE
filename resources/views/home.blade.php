@@ -1,13 +1,19 @@
 @extends('main')
-
+<!-- @section('customcss')
+  <link rel="stylesheet" href="css/app.css">
+@endsection -->
 @section('content')
-<div class="container">
-    <h1>Home</h1>
-    <h2>Lista de productos</h2>
+
+<h1 class='titulo'>Tienda</h1>
+
+<h2 class='subtitulo'>Lista de productos</h2>
+
+<div class="container"  >
+
 
     @forelse ($products as $product)
-      <article>
-        <img src="/storage/product/{{$product->featured_img}}" alt="">
+      <article class='producto'>
+        <img class='imagen 'src="/storage/product/{{$product->featured_img}}" alt="">
         <h4 class="name">{{$product->name}}</h4>
         <p class="description">{{$product->description}}</p>
         <p class="price">Precio: {{$product->price}}$</p>
@@ -15,7 +21,7 @@
           @csrf
           <input type="hidden" name="id" value="{{$product->id}}">
           <button type="submit" class="btn btn-success">Agregar al carrito</a>
-          
+
         </form>
 
 

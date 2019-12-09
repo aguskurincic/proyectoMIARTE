@@ -17,19 +17,19 @@
       <img class="logo" src="img/logo.png" alt="Logo">
       <nav class ="top_bar">
         <ul class="menu_bar">
+          <li class="botones"><a href="/">Home</a></li>
         @guest
-        <!-- <li class="botones"><a href="index.php">Home</a></li> -->
         <li class="botones"><a href="/register">Register</a></li>
         <li class="botones"><a href="/login">Login</a></li>
         @else
-        <li class="botones"><a href="/carrito"><i class="fa fa-cart-plus"></i></i></a></li>
+        <li class="botones" ><a href="/carrito"><i class="fa fa-cart-plus"></i></i></a></li>
           <div class="">
             <img class="avatar" src="storage/avatar/{{Auth::user()->avatar}}" alt="" style="width: 40px">
-            <span>Hola: {{Auth::user()->name}}</span>
+            <span class='saludo'>Hola: {{Auth::user()->name}}</span>
           </div>
           <div class="">
             <!-- <a class="btn btn-danger" href="{{ route('logout') }}">Logout</a> -->
-            <a class="btn btn-danger" href="{{ route('logout') }}"
+            <a style="margin-right: 5px" class="btn btn-danger" href="{{ route('logout') }}"
                onclick="event.preventDefault();
                              document.getElementById('logout-form').submit();">
                 {{ __('Logout') }}

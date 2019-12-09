@@ -4,7 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Producto;
 use Illuminate\Http\Request;
-
+use Auth;
+use App\Categoria;
 class ProductoController extends Controller
 {
     /**
@@ -14,7 +15,8 @@ class ProductoController extends Controller
      */
     public function index()
     {
-        //
+        $categorias = Categoria::all();
+        return view('cargarproducto', compact('categorias'));
     }
 
     /**
@@ -35,7 +37,18 @@ class ProductoController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $nuevo_producto = new Producto;
+        $path = $request['featured_img']->store('public/product');
+
+        $nuevo_producto->name = $request->name;
+        $nuevo_producto->description = $request->description;
+        $nuevo_producto->price = $request->price;
+        $nuevo_producto->featured_img = basename($path);
+        $nuevo_producto->user_id = Auth::user()->id;
+        $nuevo_producto->category_id = $request->category_id;
+        $nuevo_producto->save();
+
+        return redirect('/');
     }
 
     /**

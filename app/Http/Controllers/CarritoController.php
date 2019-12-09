@@ -59,7 +59,7 @@ class CarritoController extends Controller
 
       $item->save();
 
-      return redirect('/carrito');
+      return redirect('/');
     }
 
     /**
@@ -70,7 +70,7 @@ class CarritoController extends Controller
      */
     public function show(Carrito $carrito)
     {
-        //
+        
     }
 
     /**
@@ -102,7 +102,7 @@ class CarritoController extends Controller
      * @param  \App\Carrito  $carrito
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Request $request )
+    public function destroy(Request $request)
     {
         $item = Carrito::find($request->id);
         // dd($item);
