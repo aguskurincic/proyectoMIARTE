@@ -99,6 +99,9 @@
                             {{ __('Registrarme') }}
                             <br>
                         </button>
+                        <br>
+                        <br>
+                        <br>
                     </div>
                 </div>
             </form>
