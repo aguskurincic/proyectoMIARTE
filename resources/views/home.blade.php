@@ -21,10 +21,13 @@
           @csrf
           <input type="hidden" name="id" value="{{$product->id}}">
           <button type="submit" class="btn btn-success">Agregar al carrito</a>
-
         </form>
-
-
+        <form class="" action="/verProducto" method="post">
+          @csrf
+          <input type="hidden" name="id" value="{{$product->id}}">
+          <button type="submit" class="btn btn-success">Ver Mas</a>
+        </form>
+        <!-- <a href="verProducto" class="btn btn-success">Ver Mas</a> -->
       </article>
     @empty
       <p>No hay productos disponibles</p>

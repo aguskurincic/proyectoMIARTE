@@ -48,7 +48,7 @@ class CarritoController extends Controller
       }else {
         $numero = 0;
       }
-        // $numero = 0;
+
       $item->name = $product->name;
       $item->featured_img = $product->featured_img;
       $item->quantity = 1;
@@ -70,7 +70,7 @@ class CarritoController extends Controller
      */
     public function show(Carrito $carrito)
     {
-        
+
     }
 
     /**

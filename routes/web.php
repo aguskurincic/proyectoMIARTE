@@ -23,3 +23,4 @@ Route::post('/sacarDeCarrito', 'CarritoController@destroy')->middleware("auth");
 // Route::post('/comprarcarrito', 'CarritoController@show')->middleware('auth');
 Route::get('/cargarproducto', 'ProductoController@index')->middleware('auth');
 Route::post('/cargarproducto', 'ProductoController@store')->middleware('auth');
+Route::post('verProducto', 'ProductoController@show')->middleware('auth');
