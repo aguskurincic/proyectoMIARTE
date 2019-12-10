@@ -76,11 +76,12 @@
   @csrf
   <div class="form">
       <div class="form-group-email">
-        <label for="email"></label>
+        <label for="email" class="col-md-4 col-form-label text-md-right">Email</label>
         <input type="email" name="email" class="form-control" id="email" placeholder="example@email.com">
       </div>
+
       <div class="form-group-password">
-        <label for="Password"></label>
+        <label for="Password" class="col-md-4 col-form-label text-md-right">Password</label>
         <input type="password" class="form-control" id="Password" name="password" placeholder="Password">
       </div>
   </div>

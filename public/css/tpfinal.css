@@ -3,7 +3,7 @@
 body{
   width: 99%;
   margin: 10px 10px;
-  font-family: Questrial, sans-serif;
+  /* font-family: Questrial, sans-serif; */
   background-color: #E5E7E9
 }
 ul {
@@ -103,6 +103,7 @@ width: 100%;
   display: inline-block;
   width:100%;
   text-align: center;
+  margin-bottom: 20px;
 }
   /* Productos */
 .producto{
@@ -157,6 +158,8 @@ footer .footer_bar{
   padding-top: 2px;
   padding-bottom: 2px;
   margin-bottom: 5px;
+  padding-right: 5px;
+  justify-content: space-between;
 
 }
 .footer_menu_bar{
@@ -223,6 +226,13 @@ header .logo{
 }
 }
 /* login */
+.form{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
 .login h1{
   text-align: center;
   text-transform: uppercase;

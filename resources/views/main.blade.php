@@ -14,6 +14,7 @@
   </head>
   <body>
     <header>
+      <br>
       <img class="logo" src="img/logo.png" alt="Logo">
       <nav class ="top_bar">
         <ul class="menu_bar">
@@ -21,6 +22,7 @@
         @guest
         <li class="botones"><a href="/register">Register</a></li>
         <li class="botones"><a href="/login">Login</a></li>
+        <li class="botones"><a href="#"><i class="fa fa-cart-plus"></i></a></li>
         @else
         <li class="botones" ><a href="/carrito"><i class="fa fa-cart-plus"></i></i></a></li>
           <div class="">
@@ -35,7 +37,7 @@
                 {{ __('Logout') }}
             </a>
 
-            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none">
                 @csrf
             </form>
           </div>
@@ -58,9 +60,11 @@
     <nav class ="footer_bar">
       <ul class="footer_menu_bar">
       <li class="botones"><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+      <br>
       <li class="botones"><a href="#"><i class="fa fa-instagram"></i></a></li>
+      <br>
       <li class="botones"><a href="#"><i class="fa fa-pinterest"></i></a></li>
-      <li class="botones"><a href="#"><i class="fa fa-cart-plus"></i></a></li>
+      {{-- <li class="botones"><a href="#"><i class="fa fa-cart-plus"></i></a></li> --}}
     </ul>
   </nav>
   </footer>

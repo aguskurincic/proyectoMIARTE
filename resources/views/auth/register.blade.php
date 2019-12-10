@@ -1,11 +1,12 @@
 @extends('main')
 
 @section('content')
+  <br>
 <div class="container">
-<div class="row justify-content-center">
+  <br>
   <div class="col-md-8">
     <div class="card">
-        <div class="card-header">{{ __('Register') }}</div>
+        <div class="card-header"></div>
 
         <div class="card-body">
             <form method="POST" action="{{ route('register') }}" enctype='multipart/form-data'>
@@ -75,7 +76,7 @@
                     </div>
                 </div>
 
-                <label for="avatar" class="col-md-4 col-form-label text-md-right">{{ __('Avatar') }}</label>
+                <label for="avatar" class="col-md-4 col-form-label text-md-right">{{ ('Imagen de perfil') }}</label>
 
                 <div class="col-md-6">
                     <input accept="image/*" id="avatar" type="file" class="form-control @error('avatar') is-invalid @enderror" name="avatar" value="{{ old('avatar') }}" required autocomplete="avatar" autofocus>
@@ -88,9 +89,10 @@
                 </div>
             </div>
 
-
+            <br>
                 <div class="form-group row mb-0">
                     <div class="col-md-6 offset-md-4">
+                      <br>
                         <button type="submit" class="btn btn-primary">
                             {{ __('Register') }}
                         </button>
