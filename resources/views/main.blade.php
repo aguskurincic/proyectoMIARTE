@@ -20,7 +20,7 @@
         <ul class="menu_bar">
           <li class="botones"><a href="/">Home</a></li>
         @guest
-        <li class="botones"><a href="/register">Register</a></li>
+        <li class="botones"><a href="/register">Regitrarse</a></li>
         <li class="botones"><a href="/login">Login</a></li>
         <li class="botones"><a href="#"><i class="fa fa-cart-plus"></i></a></li>
         @else
@@ -54,7 +54,7 @@
       </nav> -->
     </header>
   <body>
-        @yield('content');
+        @yield('content')
   </body>
   <footer>
     <nav class ="footer_bar">

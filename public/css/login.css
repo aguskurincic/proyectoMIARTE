@@ -45,8 +45,9 @@ ul ol {
    list-style-type: none;
  }
 
-
-
+.form-group row mb-0{
+  text-align: center;
+}
 
 .top-nav {
    background: #17202A;
