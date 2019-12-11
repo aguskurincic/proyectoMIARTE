@@ -5,10 +5,11 @@
 </nav>
 <nav class="main_bar">
     <ul class="menu_productos">
-    <li class="botones_productos"><a href="#">Ceramica</a></li>
-    <li class="botones_productos"><a href="#">Cuadros</a></li>
-    <li class="botones_productos"><a href="#">Muebles</a></li>
-    <li class="botones_productos"><a href="#">Decoracion</a></li>
+    <li class="botones_productos"><a href="#">Rock Nacional</a></li>
+    <li class="botones_productos"><a href="#">Pop</a></li>
+    <li class="botones_productos"><a href="#">Trap</a></li>
+    <li class="botones_productos"><a href="#">Cumbia</a></li>
+    <li class="botones_productos"><a href="/home">Ver todos</a></li>
   </ul>
 </nav>
 </header>
@@ -25,15 +26,15 @@
 <!-- Wrapper for slides -->
 <div class="carousel-inner">
 <div class="item active">
-  <img src="/img/abelpintos11.jpg" alt="Los Angeles" style="width:100%;">
+  <img src="/img/abelpintos11.jpg" alt="" style="width:100%;">
 </div>
 
 <div class="item">
-  <img src="/img/airbaglibertad.jpg" alt="Chicago" style="width:100%;">
+  <img src="/img/airbaglibertad.jpg" alt="" style="width:100%;">
 </div>
 
 <div class="item">
-  <img src="/img/ceratibocanada.jpg" alt="New york" style="width:100%;">
+  <img src="/img/ceratibocanada.jpg" alt="" style="width:100%;">
 </div>
 </div>
 
