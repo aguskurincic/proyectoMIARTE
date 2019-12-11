@@ -16,7 +16,8 @@ Auth::routes();
 // Route::get('/', function(){
 //   return view("main");
 // });
-Route::get('/', 'HomeController@index');
+Route::get('/home', 'HomeController@index');
+Route::get('/', 'HomeController@entry');
 Route::post('/addtocarrito', 'CarritoController@store')->middleware('auth');
 Route::get('/carrito', 'CarritoController@index')->middleware('auth');
 Route::post('/sacarDeCarrito', 'CarritoController@destroy')->middleware("auth");

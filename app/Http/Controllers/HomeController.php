@@ -27,4 +27,8 @@ class HomeController extends Controller
       $products = Producto::all();
       return view('home', compact('products'));
     }
+
+    public function entry(){
+      return view('/');
+    }
 }
