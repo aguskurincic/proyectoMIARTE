@@ -60,7 +60,7 @@ class ProductoController extends Controller
     public function show(Producto $product, Request $request)
     {
         $product = Producto::find($request->id);
-        
+
 
         return view('verProducto', compact('product'));
     }
@@ -71,9 +71,15 @@ class ProductoController extends Controller
      * @param  \App\Producto  $producto
      * @return \Illuminate\Http\Response
      */
-    public function edit(Producto $producto)
+    public function edit(Producto $product, Request $req)
     {
-        //
+        $product = Producto::find($req->id);
+        $categorias = Categoria::all();
+
+
+
+        return view('editarProducto', compact('product', 'categorias'));
+
     }
 
     /**
@@ -85,7 +91,18 @@ class ProductoController extends Controller
      */
     public function update(Request $request, Producto $producto)
     {
-        //
+      $path = $request['featured_img']->store('public/product');
+       $producto = Producto::find($request->id);
+      $edit_producto->id = $producto;
+      $edit_producto->name = $request->name;
+      $edit_producto->description = $request->description;
+      $edit_producto->price = $request->price;
+      $edit_producto->featured_img = basename($path);
+      $edit_producto->user_id = Auth::user()->id;
+      $edit_producto->category_id = $request->category_id;
+      $edit_producto->save();
+
+      return redirect('verProducto', compact('edit_producto'));
     }
 
     /**
@@ -94,8 +111,11 @@ class ProductoController extends Controller
      * @param  \App\Producto  $producto
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Producto $producto)
+    public function destroy(Request $req)
     {
-        //
+      $producto = Producto::find($req->id);
+      $producto->delete();
+
+      return view ('eliminarProducto', compact('producto'));
     }
 }
