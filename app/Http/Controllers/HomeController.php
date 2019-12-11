@@ -29,6 +29,6 @@ class HomeController extends Controller
     }
 
     public function entry(){
-      return view('/');
+      return view('entry');
     }
 }
