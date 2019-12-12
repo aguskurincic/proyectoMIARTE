@@ -22,13 +22,24 @@
         @guest
         <li class="botones"><a href="/register">Regitrarse</a></li>
         <li class="botones"><a href="/login">Login</a></li>
+        {{-- <li class="botones"><a href="/cargarproducto"><i class="far fa-plus"></i></a></li> --}}
         <li class="botones"><a href="#"><i class="fa fa-cart-plus"></i></a></li>
+        <nav class="navbar navbar-light bg-light">
+          <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Ejemplo de producto.." aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+          </form>
+        </nav>
         @else
+        <li class="botones"><a href="/cargarproducto">Cargar producto</a></li>
+        <li class="botones"><a href="/#">Favoritos</a></li>
         <li class="botones" ><a href="/carrito"><i class="fa fa-cart-plus"></i></i></a></li>
           <div class="">
-            <img class="avatar" src="storage/avatar/{{Auth::user()->avatar}}" alt="" style="width: 40px">
-            <span class='saludo'>Hola: {{Auth::user()->name}}</span>
+            <img class="avatar" src="storage/avatar/{{Auth::user()->avatar}}" alt="" style="width: 50px">
+            <span class='saludo'>{{Auth::user()->name}}</span>
+            <a href="verPerfilUsuario"></a>
           </div>
+
           <div class="">
             <!-- <a class="btn btn-danger" href="{{ route('logout') }}">Logout</a> -->
             <a style="margin-right: 5px" class="btn btn-danger" href="{{ route('logout') }}"
@@ -44,6 +55,14 @@
         @endif
       </ul>
     </nav>
+    <div class="search-bar">
+      <nav class="navbar navbar-light bg-light">
+        <form class="form-inline">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </nav>
+    </div>
       <!-- <nav class="main_bar">
           <ul class="menu_productos">
           <li class="botones_productos"><a href="#">Ceramica</a></li>
