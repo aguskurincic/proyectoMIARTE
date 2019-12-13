@@ -35,7 +35,7 @@
         <li class="botones"><a href="/#">Favoritos</a></li>
         <li class="botones" ><a href="/carrito"><i class="fa fa-cart-plus"></i></i></a></li>
           <div class="">
-            <a href="/verperfilusuario/id"><img class="avatar" src="storage/avatar/{{Auth::user()->avatar}}" alt="" style="width: 50px">
+            <a href="/verperfilusuario"><img class="avatar" src="storage/avatar/{{Auth::user()->avatar}}" alt="" style="width: 50px">
             <span class='saludo'>{{Auth::user()->name}}</span>
 
             </a>
