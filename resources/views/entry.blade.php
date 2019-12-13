@@ -15,7 +15,7 @@
         <li class="botones_productos"><a href="#">Cuadros</a></li>
         <li class="botones_productos"><a href="#">Muebles</a></li>
         <li class="botones_productos"><a href="#">Decoracion</a></li>
-        <li class="botones_productos"><a href="/home.blade.php">Todos los productos</a></li>
+        <li class="botones_productos"><a href="/home">Todos los productos</a></li>
       </ul>
     </nav>
     </header>

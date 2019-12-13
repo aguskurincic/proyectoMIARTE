@@ -3,17 +3,18 @@
 @section('content')
 
   <div class="container">
-  <div class="row justify-content-center">
+  {{-- <div class="row justify-content-center"> --}}
     <div class="col-md-8">
       <div class="card">
-          <div class="card-header">{{ __('CargarProducto') }}</div>
-
+          <div class="card-header"></div>
+          <br>
+          <br>
           <div class="card-body">
               <form method="POST" action="/cargarproducto" enctype='multipart/form-data'>
                   @csrf
 
                   <div class="form-group row">
-                      <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Name') }}</label>
+                      <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Nombre') }}</label>
 
                       <div class="col-md-6">
                           <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
@@ -47,7 +48,7 @@
                   </div>
 
                   <div class="form-group row">
-                      <label for="description" class="col-md-4 col-form-label text-md-right">{{ __('Description') }}</label>
+                      <label for="description" class="col-md-4 col-form-label text-md-right">{{ __('Descripcion') }}</label>
 
                       <div class="col-md-6">
                           <input id="description" type="text" class="form-control @error('description') is-invalid @enderror" name="description" value="{{ old('description') }}" required autocomplete="description" autofocus>
@@ -61,7 +62,7 @@
                   </div>
 
                   <div class="form-group row">
-                      <label for="price" class="col-md-4 col-form-label text-md-right">{{ __('Price') }}</label>
+                      <label for="price" class="col-md-4 col-form-label text-md-right">{{ __('Precio') }}</label>
 
                       <div class="col-md-6">
                           <input id="price" type="price" class="form-control @error('price') is-invalid @enderror" name="price" value="{{ old('price') }}" required autocomplete="price">
@@ -96,7 +97,7 @@
                       </div>
                   </div> -->
 
-                  <label for="featured_img" class="col-md-4 col-form-label text-md-right">{{ __('Featured_img') }}</label>
+                  <label for="featured_img" class="col-md-4 col-form-label text-md-right">{{ __('Imagen de producto') }}</label>
 
                   <div class="col-md-6">
                       <input accept="image/*" id="featured_img" type="file" class="form-control @error('featured_img') is-invalid @enderror" name="featured_img" value="{{ old('featured_img') }}" required autocomplete="featured_img" autofocus>
@@ -109,10 +110,13 @@
                   </div>
               </div>
 
-
-                  <div class="form-group row mb-0">
+              <br>
+              <br>
+              <br>
+              <br>
+                  <div class="form-group row mb-0" id="botoncargar">
                       <div class="col-md-6 offset-md-4">
-                          <button type="submit" class="btn btn-primary">
+                          <button type="submit" class="btn btn-success">
                               {{ __('Cargar Producto') }}
                           </button>
                       </div>

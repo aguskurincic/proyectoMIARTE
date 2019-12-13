@@ -50,6 +50,11 @@ header {
   width: 100%;
 }
 
+#botoncargar {
+  display: flex;
+  justify-content: center;
+}
+
 #barrabusqueda {
   display: flex;
   justify-content: center;
