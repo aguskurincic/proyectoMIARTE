@@ -4,7 +4,7 @@ body{
   width: 99%;
   margin: 10px 10px;
   /* font-family: Questrial, sans-serif; */
-  background-color: #E5E7E9
+  background-color: #051321
 }
 ul {
   padding: 0px 0px;
@@ -76,9 +76,9 @@ header {
 }
 
 .logo{
-  width: 40%;
+width: 40%;
 padding:20px 20px;
-border-radius: 50%;
+border-radius: 80%;
 margin-top: 20px;
 }
 /* barra de Home */
