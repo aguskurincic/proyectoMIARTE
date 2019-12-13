@@ -11,10 +11,10 @@ use Auth;
  */
 class UserController extends Controller
 {
-  public function index($id)
+  public function index()
   {
     $usuario = Auth::user();
-    
+
     return view('verperfilusuario', compact('usuario'));
   }
 }
