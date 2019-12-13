@@ -31,6 +31,7 @@
         </form>
         <!-- <a href="verProducto" class="btn btn-success">Ver Mas</a> -->
       </article>
+
     @empty
       <p>No hay productos disponibles</p>
     @endforelse

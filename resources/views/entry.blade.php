@@ -1,7 +1,12 @@
 @extends('main')
 
 @section('content')
-<<<<<<< HEAD
+  <nav class="navbar navbar-light bg-light" id="barrabusqueda">
+    <form class="form-inline">
+      <input class="form-control mr-sm-2" type="search" placeholder="Ejemplo de producto..." aria-label="Search">
+      <button class="btn btn-primary" type="submit">Buscar</button>
+    </form>
+  </nav>
     </ul>
     </nav>
     <nav class="main_bar">
@@ -18,11 +23,11 @@
     <div class="container">
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
-    <ol class="carousel-indicators">
+    {{-- <ol class="carousel-indicators">
     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
     <li data-target="#myCarousel" data-slide-to="1"></li>
     <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
+    </ol> --}}
 
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
@@ -40,8 +45,7 @@
       <img src="/img/lalibrava.jpg" alt="New york" style="width:100%;">
     </div>
     </div>
-=======
-</ul>
+{{-- </ul>
 </nav>
 <nav class="main_bar">
     <ul class="menu_productos">
@@ -50,21 +54,20 @@
     <li class="botones_productos"><a href="#">Trap</a></li>
     <li class="botones_productos"><a href="#">Cumbia</a></li>
     <li class="botones_productos"><a href="/home">Ver todos</a></li>
-  </ul>
+  </ul> --}}
 </nav>
 </header>
-<div class="container">
-<h2>Novedades</h2>
+{{-- <div class="container">
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
 <!-- Indicators -->
 <ol class="carousel-indicators">
 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
 <li data-target="#myCarousel" data-slide-to="1"></li>
-<li data-target="#myCarousel" data-slide-to="2"></li>
+<li data-target="#myCarousel" data-slide-to="2"></li> --}}
 </ol>
 
 <!-- Wrapper for slides -->
-<div class="carousel-inner">
+{{-- <div class="carousel-inner">
 <div class="item active">
   <img src="/img/abelpintos11.jpg" alt="" style="width:100%;">
 </div>
@@ -76,8 +79,7 @@
 <div class="item">
   <img src="/img/ceratibocanada.jpg" alt="" style="width:100%;">
 </div>
-</div>
->>>>>>> bd1fef7ea7ffef34542d36c417ce14504f229840
+</div> --}}
 
     <!-- Left and right controls -->
     <a class="left carousel-control" href="#myCarousel" data-slide="prev">
