@@ -8,7 +8,7 @@ class Categoria extends Model
 {
    protected $guarded = [];
 
-   // public function category(){
-   //   return $this->hasMany('App\Producto', 'product_id');
-   // }
+   public function producto(){
+     return $this->hasMany(Producto::class, 'category_id');
+   }
 }

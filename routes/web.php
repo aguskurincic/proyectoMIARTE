@@ -28,4 +28,4 @@ Route::post('/verProducto', 'ProductoController@show')->middleware('auth');
 Route::post('/editarProducto', 'ProductoController@edit')->middleware('auth');
 Route::post('/productoEditado', 'ProductoController@update')->middleware('auth');
 Route::post('/eliminarProducto', 'ProductoController@destroy')->middleware('auth');
-Route::get('/verPerfilUsuario/[id]', 'UserController@index');
+Route::get('/verperfilusuario/{id}', 'UserController@index')->middleware('auth');

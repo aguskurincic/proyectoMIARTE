@@ -26,7 +26,7 @@
                 </div>
 
                 <div class="form-group row">
-                    <label for="category_id" class="col-md-4 col-form-label text-md-right">{{ __('Categoria') }}</label> -->
+                    <label for="category_id" class="col-md-4 col-form-label text-md-right">{{ __('Categoria') }}</label>
 
                     <div class="col-md-6">
                       <select class="" name="category_id">

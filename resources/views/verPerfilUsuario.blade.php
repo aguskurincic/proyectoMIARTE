@@ -1,26 +1,36 @@
-@extends('main');
 
-@section('content');
+@extends('main')
+<!-- <title>Perfil Usuario</title> -->
+@section('content')
 
+<h1>Hola Manuel</h1>
+    <article class="">
+      <h1>{{$usuario->name}}</h1>
+      <h2>{{$usuario->surname}}</h2>
 
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-    <div class="">
-      <p>{{User->name}}</p>
-      <p>{{User->surname}}</p>
-    </div>
+      <img src="storage/avatar/{{Auth::user()->avatar}}" alt="">
+    </article>
+
+    <!-- <article class="">
 
 
+    <form class="" action="/addtocarrito" method="post">
+      @csrf
+      <input type="hidden" name="id" value="{{$product->id}}">
+      <button type="submit" class="btn btn-success">Ver Mi Carrito</a>
+    </form>
+    </article>
+    <article>
+    <form class="" action="/eliminarProducto" method="post">
+      @csrf
+      <input type="hidden" name="id" value="{{$product->id}}">
+      <button type="submit" class="btn btn-danger">Eliminar Producto</a>
+    </form>
+    </article> -->
 
 
+@endsection
 
-  </body>
-</html>
 
 
 

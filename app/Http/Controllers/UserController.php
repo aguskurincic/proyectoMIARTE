@@ -2,18 +2,19 @@
 
 namespace App\Http\Controllers;
 
-use App\User;
+use Illuminate\Http\Request;
+use Auth;
 
 
 /**
  *
  */
-class verPerfilUsuario extends Controller
+class UserController extends Controller
 {
-
   public function index($id)
   {
-    $usuario = Usuario::find(id);
-    return view('verPerfilUsuario', compact('Usuario'));
+    $usuario = Auth::user();
+    
+    return view('verperfilusuario', compact('usuario'));
   }
 }

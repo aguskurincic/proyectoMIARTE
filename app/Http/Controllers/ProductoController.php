@@ -89,20 +89,20 @@ class ProductoController extends Controller
      * @param  \App\Producto  $producto
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Producto $producto)
+    public function update(Request $request)
     {
       $path = $request['featured_img']->store('public/product');
-       $producto = Producto::find($request->id);
-      $edit_producto->id = $producto;
-      $edit_producto->name = $request->name;
-      $edit_producto->description = $request->description;
-      $edit_producto->price = $request->price;
-      $edit_producto->featured_img = basename($path);
-      $edit_producto->user_id = Auth::user()->id;
-      $edit_producto->category_id = $request->category_id;
-      $edit_producto->save();
+       $product = Producto::find($request->id);
+       // dd($product);
+      $product->name = $request->name;
+      $product->description = $request->description;
+      $product->price = $request->price;
+      $product->featured_img = basename($path);
+      $product->user_id = Auth::user()->id;
+      $product->category_id = $request->category_id;
+      $product->save();
 
-      return redirect('verProducto', compact('edit_producto'));
+      return view('verProducto', compact('product'));
     }
 
     /**
