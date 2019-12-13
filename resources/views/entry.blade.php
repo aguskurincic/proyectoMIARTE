@@ -1,6 +1,12 @@
 @extends('main')
 
 @section('content')
+  <nav class="navbar navbar-light bg-light" id="barrabusqueda">
+    <form class="form-inline">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </nav>
     </ul>
     </nav>
     <nav class="main_bar">
@@ -17,11 +23,11 @@
     <div class="container">
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
-    <ol class="carousel-indicators">
+    {{-- <ol class="carousel-indicators">
     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
     <li data-target="#myCarousel" data-slide-to="1"></li>
     <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
+    </ol> --}}
 
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
@@ -61,7 +67,7 @@
 </ol>
 
 <!-- Wrapper for slides -->
-<div class="carousel-inner">
+{{-- <div class="carousel-inner">
 <div class="item active">
   <img src="/img/abelpintos11.jpg" alt="" style="width:100%;">
 </div>
@@ -73,7 +79,7 @@
 <div class="item">
   <img src="/img/ceratibocanada.jpg" alt="" style="width:100%;">
 </div>
-</div>
+</div> --}}
 
     <!-- Left and right controls -->
     <a class="left carousel-control" href="#myCarousel" data-slide="prev">

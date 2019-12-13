@@ -45,6 +45,18 @@ header {
 }
 
 #botonregistro{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#barrabusqueda {
+  display: flex;
+  justify-content: center;
+}
+
+.container-login {
+  display: flex;
   justify-content: center;
   width: 100%;
 }
