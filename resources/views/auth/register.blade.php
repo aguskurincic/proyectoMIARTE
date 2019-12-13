@@ -76,7 +76,7 @@
                     </div>
                 </div>
 
-                <label for="avatar" class="col-md-4 col-form-label text-md-right">{{ ('Imagen de perfil') }}</label>
+                <label for="avatar" class="col-md-4 col-form-label text-md-right">{{('Imagen de perfil')}}</label>
 
                 <div class="col-md-6">
                     <input accept="image/*" id="avatar" type="file" class="form-control @error('avatar') is-invalid @enderror" name="avatar" value="{{ old('avatar') }}" required autocomplete="avatar" autofocus>
@@ -90,12 +90,12 @@
             </div>
 
             <br>
-                <div class="form-group row mb-0">
+                <div class="form-group row mb-0" id="botonregistro">
                     <div class="col-md-6 offset-md-4">
                       <br>
                       <br>
                       <br>
-                        <button type="submit" class="btn btn-primary">
+                        <button type="submit" class="btn btn-success">
                             {{ __('Registrarme') }}
                             <br>
                         </button>
