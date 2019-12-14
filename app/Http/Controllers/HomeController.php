@@ -31,4 +31,10 @@ class HomeController extends Controller
     public function entry(){
       return view('entry');
     }
+
+    public function buscar(Request $request){
+      $products = Producto::where('name', like($request), "%")->get();
+
+      return view ('productoencontrado', compact('products'));
+    }
 }

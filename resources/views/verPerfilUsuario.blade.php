@@ -1,6 +1,6 @@
 
 @extends('main')
-<!-- <title>Perfil Usuario</title> -->
+<title>Perfil Usuario</title>
 @section('content')
 
 <h1>Hola Manuel</h1>
