@@ -30,3 +30,9 @@ Route::post('/productoEditado', 'ProductoController@update')->middleware('auth')
 Route::post('/eliminarProducto', 'ProductoController@destroy')->middleware('auth');
 Route::get('/verperfilusuario', 'UserController@index')->middleware('auth');
 Route::post('/productoencontrado', 'HomeController@buscar')->middleware('auth');
+Route::get('/crearcategoria', 'CategoriaController@create')->middleware('auth');
+Route::post('/guardarcategoria', 'CategoriaController@store')->middleware('auth');
+Route::get('/verceramicas', 'CategoriaController@show')->middleware('auth');
+Route::get('/vercuadros', 'CategoriaController@show');
+Route::get('/vermuebles', 'CategoriaController@show');
+Route::get('/verdecoracion', 'CategoriaController@show');

@@ -11,10 +11,10 @@
     </nav>
     <nav class="main_bar">
         <ul class="menu_productos">
-        <li class="botones_productos"><a href="#">Ceramica</a></li>
-        <li class="botones_productos"><a href="#">Cuadros</a></li>
-        <li class="botones_productos"><a href="#">Muebles</a></li>
-        <li class="botones_productos"><a href="#">Decoracion</a></li>
+        <li class="botones_productos"><a href="/verceramicas">Ceramica</a></li>
+        <li class="botones_productos"><a href="/vercuadros">Cuadros</a></li>
+        <li class="botones_productos"><a href="/vermuebles">Muebles</a></li>
+        <li class="botones_productos"><a href="verdecoracion">Decoracion</a></li>
         <li class="botones_productos"><a href="/home">Todos los productos</a></li>
       </ul>
     </nav>

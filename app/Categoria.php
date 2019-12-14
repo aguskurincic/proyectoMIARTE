@@ -6,9 +6,13 @@ use Illuminate\Database\Eloquent\Model;
 
 class Categoria extends Model
 {
-   protected $guarded = [];
 
+   protected $guarded = [];
+   
    public function producto(){
      return $this->hasMany(Producto::class, 'category_id');
    }
+
+
+
 }

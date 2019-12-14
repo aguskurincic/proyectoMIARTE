@@ -24,7 +24,9 @@ class CategoriaController extends Controller
      */
     public function create()
     {
-        //
+
+
+        return view ('crearcategoria');
     }
 
     /**
@@ -35,7 +37,13 @@ class CategoriaController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $categoria = New Categoria;
+
+        $categoria->name = $request->name;
+        $categoria->description = $request->description;
+        $categoria->save();
+
+        return redirect('/');
     }
 
     /**
@@ -46,7 +54,9 @@ class CategoriaController extends Controller
      */
     public function show(Categoria $categoria)
     {
-        //
+        $categoria = Categoria::where('name', 'Ceramica')->all();
+
+        return view ('/vercategoria', compact('categoria'));
     }
 
     /**
