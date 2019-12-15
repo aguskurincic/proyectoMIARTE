@@ -14,7 +14,7 @@
         <li class="botones_productos"><a href="/vercategoria">Ceramica</a></li>
         <li class="botones_productos"><a href="/vercuadros">Cuadros</a></li>
         <li class="botones_productos"><a href="/vermuebles">Muebles</a></li>
-        <li class="botones_productos"><a href="verdecoracion">Decoracion</a></li>
+        <li class="botones_productos"><a href="/verdecoracion">Decoracion</a></li>
         <li class="botones_productos"><a href="/home">Todos los productos</a></li>
       </ul>
     </nav>
@@ -22,12 +22,6 @@
     <br>
     <div class="container">
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-    {{-- <ol class="carousel-indicators">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#myCarousel" data-slide-to="1"></li>
-    <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol> --}}
 
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
@@ -45,41 +39,6 @@
       <img src="/img/lalibrava.jpg" alt="New york" style="width:100%;">
     </div>
     </div>
-{{-- </ul>
-</nav>
-<nav class="main_bar">
-    <ul class="menu_productos">
-    <li class="botones_productos"><a href="#">Rock Nacional</a></li>
-    <li class="botones_productos"><a href="#">Pop</a></li>
-    <li class="botones_productos"><a href="#">Trap</a></li>
-    <li class="botones_productos"><a href="#">Cumbia</a></li>
-    <li class="botones_productos"><a href="/home">Ver todos</a></li>
-  </ul> --}}
-</nav>
-</header>
-{{-- <div class="container">
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
-<!-- Indicators -->
-<ol class="carousel-indicators">
-<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-<li data-target="#myCarousel" data-slide-to="1"></li>
-<li data-target="#myCarousel" data-slide-to="2"></li> --}}
-</ol>
-
-<!-- Wrapper for slides -->
-{{-- <div class="carousel-inner">
-<div class="item active">
-  <img src="/img/abelpintos11.jpg" alt="" style="width:100%;">
-</div>
-
-<div class="item">
-  <img src="/img/airbaglibertad.jpg" alt="" style="width:100%;">
-</div>
-
-<div class="item">
-  <img src="/img/ceratibocanada.jpg" alt="" style="width:100%;">
-</div>
-</div> --}}
 
     <!-- Left and right controls -->
     <a class="left carousel-control" href="#myCarousel" data-slide="prev">
