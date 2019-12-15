@@ -1,6 +1,7 @@
 * {box-sizing:border-box}
 
 body{
+  /* display: flex; */
   width: 99%;
   height: 100%;
   margin: 10px 10px;
@@ -38,6 +39,38 @@ header {
   position: relative;
   color: #05031b;
   }
+
+#carritovista {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#imgcart {
+  display: flex;
+  justify-content:center;
+  width: 100%;
+}
+
+#productohome {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#imgproducto {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#imgperfil {
+  display: flex;
+  justify-content: flex-end;
+  /* height: 50%;
+  width: 50%; */
+  border-radius: 1500px;
+}
 
 #linksfooter{
   display: flex;

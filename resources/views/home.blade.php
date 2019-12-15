@@ -15,13 +15,13 @@
     <button class="btn btn-primary" type="submit">Buscar</button>
   </form>
 </nav>
-<div class="container"  >
+<div class="container" id="productohome">
 
   <br>
 
     @forelse ($products as $product)
       <article class='producto'>
-        <img class='imagen 'src="/storage/product/{{$product->featured_img}}" alt="">
+        <img class='imagen 'src="/storage/product/{{$product->featured_img}}" alt="" id="imgproducto">
         <h4 class="name">{{$product->name}}</h4>
         <p class="description">{{$product->description}}</p>
         <p class="price">Precio: {{$product->price}}$</p>
@@ -33,7 +33,7 @@
         <form class="" action="/verProducto" method="post">
           @csrf
           <input type="hidden" name="id" value="{{$product->id}}">
-          <button type="submit" class="btn btn-success">Ver Mas</a>
+          <button type="submit" class="btn btn-warning">Ver Mas</a>
         </form>
         <!-- <a href="verProducto" class="btn btn-success">Ver Mas</a> -->
       </article>
