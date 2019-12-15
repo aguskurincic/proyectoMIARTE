@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Categoria;
 use Illuminate\Http\Request;
+use App\Producto;
 
 class CategoriaController extends Controller
 {
@@ -52,10 +53,11 @@ class CategoriaController extends Controller
      * @param  \App\Categoria  $categoria
      * @return \Illuminate\Http\Response
      */
-    public function show(Categoria $categoria)
+    public function show()
     {
-        $categoria = Categoria::where('name', 'Ceramica')->all();
 
+        $categoria = Producto::where('category_id', 7)->get();
+// dd($categoria);
         return view ('/vercategoria', compact('categoria'));
     }
 

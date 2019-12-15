@@ -9,13 +9,13 @@ class Producto extends Model
     protected $guarded = [];
 
     public function user(){
-      return $this->belongsTo(User::class, 'user_id');
+      return $this->belongsTo('App\User', 'user_id');
     }
     //  public function photos(){
     //    return $this->hasMany('App\ImagesProducts', 'product_id');
     //  }
 
     public function categoria(){
-      return $this->belongsTo(Categoria::class, 'category_id');
+      return $this->belongsTo('App\Categoria', 'category_id');
     }
 }
