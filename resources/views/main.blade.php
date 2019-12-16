@@ -35,15 +35,7 @@
         <li class="botones"><a href="/cargarproducto">Cargar producto</a></li>
         <li class="botones"><a href="/#">Favoritos</a></li>
         <li class="botones" ><a href="/carrito"><i class="fa fa-cart-plus"></i></i></a></li>
-        {{-- <div class="item">
-          <a href="/verperfilusuario"><img class="ui mini circular image" src="storage/avatar/{{Auth::user()->avatar}}">
-          <div class="content">
-            <div class="ui sub header">Molly</div>
-            User
-          </a>
 
-          </div>
-        </div> --}}
           <div class="">
             <a href="/verperfilusuario"><img class="avatar" src="storage/avatar/{{Auth::user()->avatar}}" alt="" style="width: 50px">
             <span class='saludo'>{{Auth::user()->name}}</span>
@@ -75,14 +67,15 @@
         </form>
       </nav>
     </div> --}}
-      <!-- <nav class="main_bar">
+       <nav class="main_bar">
           <ul class="menu_productos">
           <li class="botones_productos"><a href="#">Ceramica</a></li>
           <li class="botones_productos"><a href="#">Cuadros</a></li>
           <li class="botones_productos"><a href="#">Muebles</a></li>
           <li class="botones_productos"><a href="#">Decoracion</a></li>
+          <li class="botones_productos"><a href="/home">Todos los productos</a></li>
         </ul>
-      </nav> -->
+      </nav>
     </header>
   <body>
         @yield('content')

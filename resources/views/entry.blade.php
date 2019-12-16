@@ -9,7 +9,7 @@
   </nav>
     </ul>
     </nav>
-    <nav class="main_bar">
+    {{-- <nav class="main_bar">
         <ul class="menu_productos">
         <li class="botones_productos"><a href="/vercategoria">Ceramica</a></li>
         <li class="botones_productos"><a href="/vercuadros">Cuadros</a></li>
@@ -17,7 +17,7 @@
         <li class="botones_productos"><a href="/verdecoracion">Decoracion</a></li>
         <li class="botones_productos"><a href="/home">Todos los productos</a></li>
       </ul>
-    </nav>
+    </nav> --}}
     </header>
     <br>
     <div class="container">

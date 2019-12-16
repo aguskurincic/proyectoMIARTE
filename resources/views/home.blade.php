@@ -4,9 +4,9 @@
 @endsection -->
 @section('content')
 
-<h1 class='titulo'>Tienda de artesanías</h1>
+{{-- <h1 class='titulo'>Tienda de artesanías</h1>
 
-<h2 class='subtitulo'>Listado de productos</h2>
+<h2 class='subtitulo'>Listado de productos</h2> --}}
 <br>
 <nav class="navbar navbar-light bg-light" id="barrabusqueda">
   <form class="form-inline" action='/productoencontrado' method='post'>
