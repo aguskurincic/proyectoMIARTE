@@ -33,7 +33,7 @@
         </nav> --}}
         @else
         <li class="botones"><a href="/cargarproducto">Cargar producto</a></li>
-        <li class="botones"><a href="/#">Favoritos</a></li>
+        <li class="botones"><a href="/verfavoritos">Favoritos</a></li>
         <li class="botones" ><a href="/carrito"><i class="fa fa-cart-plus"></i></i></a></li>
 
           <div class="">
