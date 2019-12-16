@@ -13,7 +13,7 @@ $factory->define(Producto::class, function (Faker $faker) {
       'description' => $faker->paragraph(4),
       'price'=> $faker->randomFloat(2, 2, 8),
       'user_id'=> rand(1,6),//FK de users
-      'category_id'=> rand(1,6),//FK de category
+      'category_id'=> rand(1,4),//FK de category
       'featured_img'=> $faker->image($path, 200, 200, 'food', false)
 
     ];
