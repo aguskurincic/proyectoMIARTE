@@ -16,18 +16,12 @@
     <header>
       {{-- <img class="logo" src="/img/logo.png" alt="Logo"> --}}
       <nav class ="top_bar">
-<<<<<<< HEAD
-        <ul class="menu_bar" id="headerbar">
-          <a href="/"><img src="/img/logo.png" alt="Logo" id="logohead"></a>
-          <li class="botones"><a href="/">Home</a></li>
-=======
         <div class="left">
           <img src="/img/logo.png" alt="Logo" id="logohead">
           <p><a href="/">Home</a></p>
         </div>
 
         <ul class="menu_bar" id="headerbar">
->>>>>>> 4fcfc2b5b812492029230d1160de17c681f7f30a
         @guest
           <li class="botones"><a href="/register">Regitrarse</a></li>
           <li class="botones"><a href="/login">Login</a></li>
