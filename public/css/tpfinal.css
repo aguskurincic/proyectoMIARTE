@@ -60,16 +60,23 @@ header {
 
 .buttons {
   overflow: hidden;
+  width: 100%;
 }
 
-#colorbtn {
+/* #colorbtn {
   width: 20%;
   margin-right: 5px;
-}
+} */
 
-.buttoncolor {
+/* .buttoncolor {
   float: left;
   margin-right: 5px;
+} */
+
+#caruselbb {
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 #productohome {

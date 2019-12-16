@@ -1,7 +1,7 @@
 @extends('main')
 
 @section('content')
-  <div class="buttons">
+  {{-- <div class="buttons"> --}}
     <article class='producto'>
         <img class='imagen' src="/storage/product/{{$product->featured_img}}" alt="" id="verproductoimg">
         <h4 class="name">{{$product->name}}</h4>
@@ -32,5 +32,5 @@
           <button type="submit" class="btn btn-danger" id="colorbtn">Eliminar Producto</a>
         </form>
       </article>
-    </div>
+    {{-- </div> --}}
     @endsection

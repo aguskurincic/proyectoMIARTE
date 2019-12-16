@@ -81,13 +81,7 @@
         @yield('content')
   </body>
   <footer>
-    {{-- <nav aria-label="Page navigation example">
-      <ul class="pagination justify-content-end" id="linksfooter">
-        <li class="botones"><a href="#"><i class="fa fa-facebook-square"></i></a></li>
-        <li class="botones"><a href="#"><i class="fa fa-instagram"></i></a></li>
-        <li class="botones"><a href="#"><i class="fa fa-pinterest"></i></a></li>
-      </ul>
-    </nav> --}}
+    
     <nav class ="footer_bar" id="footerlinks">
         <ul class="footer_menu_bar">
         <li class="botones"><a href="#"><i class="fa fa-facebook-square"></i></a></li>
