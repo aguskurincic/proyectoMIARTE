@@ -1,11 +1,8 @@
 * {box-sizing:border-box}
 
 body{
-  /* display: flex; */
-  width: 99%;
-  height: 100%;
-  margin: 10px 10px;
-  background-color: #263f44
+  background-color: #263f44;
+  padding-top: 70px; /* tiene que coincidir con la altura del header para poder compensar.*/
 }
 ul {
   padding: 0px 0px;
@@ -30,15 +27,10 @@ ul{
 
 /*Header*/
 header {
-  text-align: center;
-  color: #a1162b;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  background-image: url("../Imagenes/producto02.jpg");
-  background-size: cover;
-  width: 100%;
-  position: relative;
-  }
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
 
 #carritovista {
   display: flex;
@@ -155,48 +147,56 @@ header {
 }
 
 .avatar{
-  border-radius: 50px;
-  line-height: normal;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
 }
-
-#logoentry {
+.logo-wrapper{
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
   justify-content: center;
+  margin: 20px 0;
 }
-
 .logo{
-width: 40%;
-padding:20px 20px;
-border-radius: 80%;
-margin-top: 20px;
+border-radius: 50%;
+width: 250px;
 }
 /* barra de Home */
 .top_bar{
-  width: 100%;
   background-color: #871324;
-  padding-top: 10px;
-  padding-bottom: 5px;
-  position: absolute;
-  top: 5px;
-  margin-bottom: 5px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.left{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+}
+.left p{
+  margin: 0 0 0 20px;
 }
 .menu_bar{
-  width: 100%;
   display: flex;
   flex-flow: wrap;
   justify-content: flex-end;
-  }
-
-  .menu_bar .botones{
-    display: block;
-    padding: 10px 10px;
-    margin-right: 8px;
-    }
-    .saludo{
-      color:white;
-      padding: 10px;
-      text-transform: uppercase;
-    }
+  align-items: center;
+}
+.menu_bar .botones{
+  display: block;
+  padding: 10px 10px;
+  margin-right: 8px;
+}
+.saludo{
+  color:white;
+  padding: 10px;
+  text-transform: uppercase;
+}
   /* barra de Productos */
 .main_bar{
 width: 100%;

@@ -7,11 +7,11 @@
 {{-- <h1 class='titulo'>Tienda de artesanías</h1>
 
 <h2 class='subtitulo'>Listado de productos</h2> --}}
-<br>
+
 <h1 align="center">PRODUCTOS</h1>
-<br>
+
 @include('nav')
-<br>
+
 <nav class="navbar navbar-light bg-light" id="barrabusqueda">
   <form class="form-inline" action='/productoencontrado' method='get'>
 
@@ -20,8 +20,6 @@
   </form>
 </nav>
 <div class="container" id="productohome">
-
-  <br>
 
     @forelse ($products as $product)
       <article class='producto'>
