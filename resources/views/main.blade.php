@@ -19,29 +19,21 @@
       <img class="logo" src="/img/logo.png" alt="Logo">
       <nav class ="top_bar">
         <ul class="menu_bar" id="headerbar">
+          <img src="/img/logo.png" alt="Logo" id="logohead">
           <li class="botones"><a href="/">Home</a></li>
         @guest
-        <li class="botones"><a href="/register">Regitrarse</a></li>
-        <li class="botones"><a href="/login">Login</a></li>
-        {{-- <li class="botones"><a href="/cargarproducto"><i class="far fa-plus"></i></a></li> --}}
-        <li class="botones"><a href="#"><i class="fa fa-cart-plus"></i></a></li>
-        {{-- <nav class="navbar navbar-light bg-light">
-          <form class="form-inline">
-            <input class="form-control mr-sm-2" type="search" placeholder="Ejemplo de producto.." aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
-          </form>
-        </nav> --}}
+          <li class="botones"><a href="/register">Regitrarse</a></li>
+          <li class="botones"><a href="/login">Login</a></li>
+          {{-- <li class="botones"><a href="/cargarproducto"><i class="far fa-plus"></i></a></li> --}}
+          <li class="botones"><a href="#"><i class="fa fa-cart-plus"></i></a></li>
         @else
-        <li class="botones"><a href="/cargarproducto">Cargar producto</a></li>
-        <li class="botones"><a href="/verfavoritos">Favoritos</a></li>
-        <li class="botones" ><a href="/carrito"><i class="fa fa-cart-plus"></i></i></a></li>
+          <li class="botones"><a href="/cargarproducto">Cargar producto</a></li>
+          <li class="botones"><a href="/verfavoritos">Favoritos</a></li>
+          <li class="botones" ><a href="/carrito"><i class="fa fa-cart-plus"></i></i></a></li>
 
           <div class="">
             <a href="/verperfilusuario"><img class="avatar" src="/storage/avatar/{{Auth::user()->avatar}}" alt="" style="width: 50px">
-            <span class='saludo'>{{Auth::user()->name}}</span>
-
-            </a>
-
+            <span class='saludo'>{{Auth::user()->name}}</span></a>
           </div>
 
           <div class="">
@@ -67,7 +59,7 @@
         </form>
       </nav>
     </div> --}}
-       <nav class="main_bar">
+       {{-- <nav class="main_bar">
           <ul class="menu_productos">
           <li class="botones_productos"><a href="/vercategoria/8">Ceramica</a></li>
           <li class="botones_productos"><a href="/vercategoria/10">Cuadros</a></li>
@@ -75,13 +67,13 @@
           <li class="botones_productos"><a href="/vercategoria/11">Decoracion</a></li>
           <li class="botones_productos"><a href="/home">Todos los productos</a></li>
         </ul>
-      </nav>
+      </nav> --}}
     </header>
   <body>
         @yield('content')
   </body>
   <footer>
-    
+
     <nav class ="footer_bar" id="footerlinks">
         <ul class="footer_menu_bar">
         <li class="botones"><a href="#"><i class="fa fa-facebook-square"></i></a></li>

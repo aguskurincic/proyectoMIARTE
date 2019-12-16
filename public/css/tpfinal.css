@@ -52,6 +52,19 @@ header {
   width: 100%;
 }
 
+/* #img1carr {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+} */
+
+#logohead {
+  display: flex;
+  justify-content: flex-start;
+  border-radius: 300px;
+  height: 50px;
+}
+
 #verproductoimg {
   display: flex;
   justify-content: center;

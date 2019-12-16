@@ -9,7 +9,7 @@
   </nav>
     </ul>
     </nav>
-    {{-- <nav class="main_bar">
+    <nav class="main_bar">
         <ul class="menu_productos">
         <li class="botones_productos"><a href="/vercategoria/8">Ceramica</a></li>
         <li class="botones_productos"><a href="/vercategoria/9">Cuadros</a></li>
@@ -17,7 +17,7 @@
         <li class="botones_productos"><a href="/vercategoria/11">Decoracion</a></li>
         <li class="botones_productos"><a href="/home">Todos los productos</a></li>
       </ul>
-    </nav> --}}
+    </nav>
     </header>
     <br>
     {{-- <div class="container"> --}}
@@ -27,7 +27,7 @@
 
           <div class="carousel-inner" id="caruselbb">
               <div class="item active">
-                <img src="/img/cat-living-sillones_2.jpg" alt="">
+                <img src="/img/carrusel 1.jpg" alt="" id="img1carr">
               </div>
 
               <div class="item">
