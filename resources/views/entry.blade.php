@@ -13,11 +13,10 @@
     </ul>
     </nav>
     <nav class="main_bar">
-        <ul class="menu_productos">
-        <li class="botones_productos"><a href="/vercategoria/8">Ceramica</a></li>
-        <li class="botones_productos"><a href="/vercategoria/9">Cuadros</a></li>
-        <li class="botones_productos"><a href="/vercategoria/10">Muebles</a></li>
-        <li class="botones_productos"><a href="/vercategoria/11">Decoracion</a></li>
+      <ul class="menu_productos">
+        @foreach ($categorias as $categoria)
+          <li class="botones_productos"><a href="/vercategoria/{{$categoria->id}}">{{$categoria->name}}</a></li>
+        @endforeach
         <li class="botones_productos"><a href="/home">Todos los productos</a></li>
       </ul>
     </nav>

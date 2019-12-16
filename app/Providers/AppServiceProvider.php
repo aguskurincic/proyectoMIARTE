@@ -3,6 +3,8 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\Facades\Schema;
+use App\Categoria;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -23,6 +25,11 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+      Schema::defaultStringLength(191);
+
+      //Compartimos la lista de categorías con todas las vistas.
+      $categorias = Categoria::all();
+      view()->share(compact('categorias'));
+
     }
 }
