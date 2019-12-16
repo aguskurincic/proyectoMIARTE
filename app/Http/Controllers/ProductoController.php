@@ -121,8 +121,12 @@ class ProductoController extends Controller
 
     public function fav(Request $req){
       $producto = Producto::find($req->id);
-      
+
 
       return view ('verfavoritos', compact('producto'));
+    }
+
+    public function showfav(){
+      return view ('verfavoritos');
     }
 }

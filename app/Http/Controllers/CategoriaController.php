@@ -53,12 +53,12 @@ class CategoriaController extends Controller
      * @param  \App\Categoria  $categoria
      * @return \Illuminate\Http\Response
      */
-    public function show()
+    public function show($id)
     {
 
-        $categoria = Producto::where('category_id', 7)->get();
-// dd($categoria);
-        return view ('/vercategoria', compact('categoria'));
+        $productos = Producto::where('category_id', '=', $id)->get();
+        $nombre_categoria = Categoria::find($id);
+        return view ('/vercategoria', compact('productos', 'nombre_categoria'));
     }
 
     /**

@@ -9,14 +9,14 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
- <link rel="stylesheet" href="css/tpfinal.css">
+ <link rel="stylesheet" href="/css/tpfinal.css">
     <title>Ecomerce</title>
   </head>
   <body>
     <header>
       <br>
       <br>
-      <img class="logo" src="img/logo.png" alt="Logo">
+      <img class="logo" src="/img/logo.png" alt="Logo">
       <nav class ="top_bar">
         <ul class="menu_bar" id="headerbar">
           <li class="botones"><a href="/">Home</a></li>
@@ -37,7 +37,7 @@
         <li class="botones" ><a href="/carrito"><i class="fa fa-cart-plus"></i></i></a></li>
 
           <div class="">
-            <a href="/verperfilusuario"><img class="avatar" src="storage/avatar/{{Auth::user()->avatar}}" alt="" style="width: 50px">
+            <a href="/verperfilusuario"><img class="avatar" src="/storage/avatar/{{Auth::user()->avatar}}" alt="" style="width: 50px">
             <span class='saludo'>{{Auth::user()->name}}</span>
 
             </a>
@@ -69,10 +69,10 @@
     </div> --}}
        <nav class="main_bar">
           <ul class="menu_productos">
-          <li class="botones_productos"><a href="#">Ceramica</a></li>
-          <li class="botones_productos"><a href="#">Cuadros</a></li>
-          <li class="botones_productos"><a href="#">Muebles</a></li>
-          <li class="botones_productos"><a href="#">Decoracion</a></li>
+          <li class="botones_productos"><a href="/vercategoria/8">Ceramica</a></li>
+          <li class="botones_productos"><a href="/vercategoria/10">Cuadros</a></li>
+          <li class="botones_productos"><a href="/vercategoria/9">Muebles</a></li>
+          <li class="botones_productos"><a href="/vercategoria/11">Decoracion</a></li>
           <li class="botones_productos"><a href="/home">Todos los productos</a></li>
         </ul>
       </nav>

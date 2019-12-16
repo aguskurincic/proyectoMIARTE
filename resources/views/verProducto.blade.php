@@ -20,7 +20,7 @@
           <button type="submit" class="btn btn-info" id="colorbtn">Agregar a favoritos</a>
         </form>
 
-        <form class="buttoncolor" action="/editarProducto" method="post">
+        <!-- <form class="buttoncolor" action="/editarProducto" method="post">
           @csrf
           <input type="hidden" name="id" value="{{$product->id}}">
           <button type="submit" class="btn btn-warning" id="colorbtn">Editar Producto</a>
@@ -30,7 +30,7 @@
           @csrf
           <input type="hidden" name="id" value="{{$product->id}}">
           <button type="submit" class="btn btn-danger" id="colorbtn">Eliminar Producto</a>
-        </form>
+        </form> -->
       </article>
     {{-- </div> --}}
     @endsection
