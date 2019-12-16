@@ -36,3 +36,4 @@ Route::get('/vercategoria', 'CategoriaController@show')->middleware('auth');
 Route::get('/vercuadros', 'CategoriaController@show');
 Route::get('/vermuebles', 'CategoriaController@show');
 Route::get('/verdecoracion', 'CategoriaController@show');
+Route::get('/verfavoritos', 'ProductoController@fav')->middleware('auth');

@@ -18,7 +18,7 @@
       <br>
       <img class="logo" src="img/logo.png" alt="Logo">
       <nav class ="top_bar">
-        <ul class="menu_bar">
+        <ul class="menu_bar" id="headerbar">
           <li class="botones"><a href="/">Home</a></li>
         @guest
         <li class="botones"><a href="/register">Regitrarse</a></li>
@@ -54,7 +54,7 @@
 
           <div class="">
             <!-- <a class="btn btn-danger" href="{{ route('logout') }}">Logout</a> -->
-            <a style="margin-right: 5px" class="btn btn-danger" href="{{ route('logout') }}"
+            <a style="margin-right: 5px" class="btn btn-warning" href="{{ route('logout') }}"
                onclick="event.preventDefault();
                              document.getElementById('logout-form').submit();">
                 {{ __('Logout') }}
