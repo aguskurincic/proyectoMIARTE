@@ -35,7 +35,7 @@
       <button type="submit" class="btn btn-success">Comprar</a>
     </form> --}}
 
-  {{$items->total($items)}}
+  <!-- {{$items->total($items)}} -->
 
 
 

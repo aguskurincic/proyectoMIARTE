@@ -42,6 +42,6 @@ class User extends Authenticatable
     }
 
     public function favorito(){
-      return $this->belongsToMany('App\Producto', 'favoritos', 'users_id', 'product_id');
+      return $this->belongsToMany('App\Producto', 'favoritos', 'user_id', 'product_id');
     }
 }

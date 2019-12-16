@@ -1,9 +1,10 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use Auth;
 use App\Favoritos;
 use Illuminate\Http\Request;
+use App\Producto;
 
 class FavoritosController extends Controller
 {
@@ -14,7 +15,10 @@ class FavoritosController extends Controller
      */
     public function index()
     {
-        //
+      $productos = Auth::user()->favorito;
+
+// dd($producto);
+      return view ('verfavoritos', compact('productos'));
     }
 
     /**
@@ -24,7 +28,7 @@ class FavoritosController extends Controller
      */
     public function create()
     {
-        //
+
     }
 
     /**
@@ -33,9 +37,14 @@ class FavoritosController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(Request $req)
     {
-        //
+        $favoritos = new Favoritos;
+        $favoritos->product_id = $req->id;
+        $favoritos->user_id = Auth::user()->id;
+        $favoritos->save();
+
+    return redirect('/');
     }
 
     /**
