@@ -2,7 +2,8 @@
 
 @section('content')
 
-<h1>{{$nombre_categoria->name}}</h1>
+<h1 align="center">{{$nombre_categoria->name}}</h1>
+@include('nav')
 <div class="container" id="productohome">
 @forelse ($productos as $producto)
   <article class='producto'>

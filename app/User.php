@@ -40,4 +40,8 @@ class User extends Authenticatable
     public function product(){
       return $this->hasMany(Producto::class, 'user_id');
     }
+
+    public function favorito(){
+      return $this->belongsToMany('App\Producto', 'favoritos', 'user_id', 'product_id');
+    }
 }

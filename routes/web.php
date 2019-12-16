@@ -36,5 +36,6 @@ Route::get('/vercategoria/{id}', 'CategoriaController@show')->middleware('auth')
 Route::get('/vercuadros', 'CategoriaController@show');
 Route::get('/vermuebles', 'CategoriaController@show');
 Route::get('/verdecoracion', 'CategoriaController@show');
-Route::post('/verfavoritos', 'ProductoController@fav')->middleware('auth');
-Route::get('/verfavoritos', 'ProductoController@showfav')->middleware('auth');
+// Route::post('/verfavoritos', 'ProductoController@fav')->middleware('auth');
+Route::get('/verfavoritos', 'FavoritosController@index')->middleware('auth');
+Route::post('/verfavoritos', 'FavoritosController@store')->middleware('auth');

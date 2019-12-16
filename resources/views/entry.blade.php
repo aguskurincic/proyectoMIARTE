@@ -1,26 +1,16 @@
 @extends('main')
 
 @section('content')
-  <ul>
+  <div class="logo-wrapper">
     <img class="logo" src="/img/logo.png" alt="Logo" id="logoentry">
-  </ul>
+  </div>
   <nav class="navbar navbar-light bg-light" id="barrabusqueda">
     <form class="form-inline" action='/productoencontrado' method=GET>
       <input class="form-control mr-sm-2" type="search" name='busqueda' placeholder="Ejemplo de producto..." aria-label="Search">
       <button class="btn btn-primary" type="submit">Buscar</button>
     </form>
   </nav>
-    </ul>
-    </nav>
-    <nav class="main_bar">
-        <ul class="menu_productos">
-        <li class="botones_productos"><a href="/vercategoria/8">Ceramica</a></li>
-        <li class="botones_productos"><a href="/vercategoria/9">Cuadros</a></li>
-        <li class="botones_productos"><a href="/vercategoria/10">Muebles</a></li>
-        <li class="botones_productos"><a href="/vercategoria/11">Decoracion</a></li>
-        <li class="botones_productos"><a href="/home">Todos los productos</a></li>
-      </ul>
-    </nav>
+    @include('nav')
     </header>
     <br>
     {{-- <div class="container"> --}}
