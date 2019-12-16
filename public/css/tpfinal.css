@@ -58,6 +58,20 @@ header {
   width: 100%;
 }
 
+.buttons {
+  overflow: hidden;
+}
+
+#colorbtn {
+  width: 20%;
+  margin-right: 5px;
+}
+
+.buttoncolor {
+  float: left;
+  margin-right: 5px;
+}
+
 #productohome {
   display: flex;
   justify-content: center;
