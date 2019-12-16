@@ -19,7 +19,7 @@
       {{-- <img class="logo" src="/img/logo.png" alt="Logo"> --}}
       <nav class ="top_bar">
         <ul class="menu_bar" id="headerbar">
-          <img src="/img/logo.png" alt="Logo" id="logohead">
+          <a href="/"><img src="/img/logo.png" alt="Logo" id="logohead"></a>
           <li class="botones"><a href="/">Home</a></li>
         @guest
           <li class="botones"><a href="/register">Regitrarse</a></li>

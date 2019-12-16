@@ -4,7 +4,8 @@
 <br>
 <br>
 @section('content')
-
+<br>
+<h1 class="perfilh1" align="center">PERFIL</h1>
   {{-- <h1>Perfil de usuario</h1>  --}}
     <article class="">
       <h1>Usuario: {{$usuario->name}}</h1>
@@ -42,7 +43,8 @@
         </article>
           @empty
           <h2>No hay Productos Cargados por este Usuario</h2>
-
+          <br>
+          <br>
           @endforelse
 
       </div>
