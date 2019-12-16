@@ -15,8 +15,13 @@ class CreateFavoritosTable extends Migration
     {
         Schema::create('favoritos', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->biginteger('user_id')->unsigned();//FK de users
+            $table->biginteger('product_id')->unsigned();//FK de producto
+            $table->foreign('product_id')->references('id')->on('productos');
+            $table->foreign('user_id')->references('id')->on('users');
             $table->timestamps();
         });
+
     }
 
     /**
@@ -28,4 +33,5 @@ class CreateFavoritosTable extends Migration
     {
         Schema::dropIfExists('favoritos');
     }
+
 }

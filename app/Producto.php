@@ -18,4 +18,8 @@ class Producto extends Model
     public function categoria(){
       return $this->belongsTo('App\Categoria', 'category_id');
     }
+
+    public function favorito(){
+      return $this->belongsToMany('App\Producto', 'favoritos', 'product_id', 'user_id');
+    }
 }
