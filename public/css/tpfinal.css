@@ -159,6 +159,11 @@ header {
   line-height: normal;
 }
 
+#logoentry {
+  display: flex;
+  justify-content: center;
+}
+
 .logo{
 width: 40%;
 padding:20px 20px;

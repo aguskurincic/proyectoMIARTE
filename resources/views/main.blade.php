@@ -16,7 +16,7 @@
     <header>
       <br>
       <br>
-      <img class="logo" src="/img/logo.png" alt="Logo">
+      {{-- <img class="logo" src="/img/logo.png" alt="Logo"> --}}
       <nav class ="top_bar">
         <ul class="menu_bar" id="headerbar">
           <img src="/img/logo.png" alt="Logo" id="logohead">

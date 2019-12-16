@@ -7,6 +7,9 @@
 {{-- <h1 class='titulo'>Tienda de artesanías</h1>
 
 <h2 class='subtitulo'>Listado de productos</h2> --}}
+<br>
+<h1 align="center">PRODUCTOS</h1>
+<br>
 <nav class="main_bar">
    <ul class="menu_productos">
    <li class="botones_productos"><a href="/vercategoria/8">Ceramica</a></li>
