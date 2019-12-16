@@ -17,7 +17,35 @@
     </article>
 
 
+    <div class="buttons">
+      <h1>Mis Productos</h1>
 
+        @forelse ($productos as $producto)
+          <article class='producto'>
+          <img class='imagen' src="/storage/product/{{$producto->featured_img}}" alt="" id="verproductoimg">
+          <h4 class="name">{{$producto->name}}</h4>
+          <p class="description">{{$producto->description}}</p>
+          <p class="price">Precio: {{$producto->price}}$</p>
+
+        <form class="buttoncolor" action="/editarProducto" method="post">
+            @csrf
+            <input type="hidden" name="id" value="{{$producto->id}}">
+            <button type="submit" class="btn btn-warning" id="colorbtn">Editar Producto</a>
+          </form>
+
+          <form class="buttoncolor" action="/eliminarProducto" method="post">
+            @csrf
+            <input type="hidden" name="id" value="{{$producto->id}}">
+            <button type="submit" class="btn btn-danger" id="colorbtn">Eliminar Producto</a>
+
+          </form>
+        </article>
+          @empty
+          <h2>No hay Productos Cargados por este Usuario</h2>
+
+          @endforelse
+
+      </div>
 
 
 @endsection
