@@ -10,15 +10,7 @@
 <br>
 <h1 align="center">PRODUCTOS</h1>
 <br>
-<nav class="main_bar">
-   <ul class="menu_productos">
-   <li class="botones_productos"><a href="/vercategoria/8">Ceramica</a></li>
-   <li class="botones_productos"><a href="/vercategoria/10">Cuadros</a></li>
-   <li class="botones_productos"><a href="/vercategoria/9">Muebles</a></li>
-   <li class="botones_productos"><a href="/vercategoria/11">Decoracion</a></li>
-   {{-- <li class="botones_productos"><a href="/home">Todos los productos</a></li> --}}
- </ul>
-</nav>
+@include('nav')
 <br>
 <nav class="navbar navbar-light bg-light" id="barrabusqueda">
   <form class="form-inline" action='/productoencontrado' method='get'>
