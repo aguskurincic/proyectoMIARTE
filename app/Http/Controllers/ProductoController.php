@@ -118,4 +118,11 @@ class ProductoController extends Controller
 
       return view ('eliminarProducto', compact('producto'));
     }
+
+    public function fav(Request $req){
+      $producto = Producto::find($req->id);
+      
+
+      return view ('verfavoritos', compact('producto'));
+    }
 }
