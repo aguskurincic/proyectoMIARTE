@@ -39,3 +39,4 @@ Route::get('/verdecoracion', 'CategoriaController@show');
 // Route::post('/verfavoritos', 'ProductoController@fav')->middleware('auth');
 Route::get('/verfavoritos', 'FavoritosController@index')->middleware('auth');
 Route::post('/verfavoritos', 'FavoritosController@store')->middleware('auth');
+Route::post('/finalizarcompra', 'CarritoController@comprar')->middleware('auth');

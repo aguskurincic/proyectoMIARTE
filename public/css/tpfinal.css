@@ -1,16 +1,8 @@
 * {box-sizing:border-box}
 
 body{
-<<<<<<< HEAD
-  /* display: flex; */
-  width: 99%;
-  height: 100%;
-  margin: 10px 10px;
-  background-color: #daa02e
-=======
   background-color: #263f44;
   padding-top: 70px; /* tiene que coincidir con la altura del header para poder compensar.*/
->>>>>>> 4fcfc2b5b812492029230d1160de17c681f7f30a
 }
 ul {
   padding: 0px 0px;
@@ -42,8 +34,9 @@ header {
 
 #carritovista {
   display: flex;
-  justify-content: center;
-  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
 }
 
 #imgcart {
@@ -153,7 +146,7 @@ header {
   justify-content: space-around;
 }
 #colorbtn{
-  
+
 }
 
 .container-login {
