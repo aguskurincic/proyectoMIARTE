@@ -11,6 +11,7 @@
         <form class="buttoncolor" action="/addtocarrito" method="post">
           @csrf
           <input type="hidden" name="id" value="{{$product->id}}">
+          <input type="number" name="quantity" min='0' value="">
           <button type="submit" class="btn btn-success" id="colorbtn">Agregar al carrito</a>
         </form>
 

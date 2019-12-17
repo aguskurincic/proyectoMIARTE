@@ -89,7 +89,7 @@ header {
 
 #productohome {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   width: 100%;
 }
 
@@ -136,6 +136,11 @@ header {
   flex-direction: row;
   justify-content: space-around;
 }
+/* #botones{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+} */
 
 .botoneditarperfil{
   display: flex;

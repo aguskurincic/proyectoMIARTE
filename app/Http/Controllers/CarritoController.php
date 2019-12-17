@@ -20,13 +20,21 @@ class CarritoController extends Controller
 
       $total = 0;
      foreach ($items as $item) {
-      $total += $item->price;
+      $total += $item->subtotal;
      }
 
      return view('cart', compact('total', 'items'));
     }
 
     public function comprar (){
+      $items = Carrito::where("user_id", Auth::user()->id)->where("status", 0)->get();
+      $numero = Carrito::all()->max('order_number');
+      // dd($numero);
+      foreach ($items as $item){
+        $item->status = 1;
+        $item->order_number = $numero + 1;
+        $item->save();
+      }
       return view('finalizarcompra');
     }
     /**
@@ -51,18 +59,18 @@ class CarritoController extends Controller
       $ultimoCarrito = Carrito::latest('order_number')->first();
       // dd($ultimoCarrito);
       $item = new Carrito;
-      if($ultimoCarrito){
-        $numero = $ultimoCarrito->order_number + 1;
-      }else {
-        $numero = 0;
-      }
+      // if($ultimoCarrito){
+      //   $numero = $ultimoCarrito->order_number + 1;
+      // }else {
+      //   $numero = 0;
+      // }
 
       $item->name = $product->name;
       $item->featured_img = $product->featured_img;
-      $item->quantity = 1;
+      $item->quantity = $request->quantity;
       $item->subtotal = $product->price * $item->quantity;
       $item->price = $product->price;
-      $item->order_number = $numero + 1;
+      // $item->order_number = $numero + 1;
       $item->user_id = Auth::user()->id;
 
       $item->save();

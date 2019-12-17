@@ -14,6 +14,8 @@
         <h4 class="name">{{$product->name}}</h4>
         <p class="description">{{$product->description}}</p>
         <p class="price">Precio: {{$product->price}}$</p>
+        <p class="quantity">Cantidad: {{$product->quantity}}</p>
+        <p class='subtotal'>Subtotal: {{$product->subtotal}}</p>
         <div class="botoneditarperfil">
           <form class="" action="/sacarDeCarrito" method="post">
           @csrf
