@@ -27,9 +27,5 @@ class AppServiceProvider extends ServiceProvider
     {
       Schema::defaultStringLength(191);
 
-      //Compartimos la lista de categorías con todas las vistas.
-      $categorias = Categoria::all();
-      view()->share(compact('categorias'));
-
     }
 }
