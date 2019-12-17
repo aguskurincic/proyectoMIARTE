@@ -44,6 +44,12 @@ header {
   width: 100%;
 }
 
+.fotoperfil {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
 /* #img1carr {
   display: flex;
   justify-content: center;
@@ -99,9 +105,10 @@ header {
 #imgperfil {
   display: flex;
   justify-content: flex-end;
-  /* height: 50%;
-  width: 50%; */
-  border-radius: 1500px;
+  border-radius: 50%;
+  height: 300px;
+  width: 300px;
+  padding-left: 20px;
 }
 
 #linksfooter{
