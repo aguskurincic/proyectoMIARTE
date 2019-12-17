@@ -78,12 +78,6 @@ header {
   margin-right: 5px;
 } */
 
-#caruselbb {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
-
 #productohome {
   display: flex;
   justify-content: center;
@@ -109,11 +103,6 @@ header {
   justify-content: flex-end;
 }
 
-#myCarousel{
-  justify-content: center;
-  width: 100%;
-  height: 20%;
-}
 
 #botonregistro{
   display: flex;
@@ -144,19 +133,11 @@ header {
   flex-direction: row;
   justify-content: space-around;
 }
-#colorbtn{
-
-}
 
 .container-login {
   display: flex;
   justify-content: center;
   width: 100%;
-}
-
-.carousel, .carousel-inner > .item {
-  height: 500px;
-  width: 500px;
 }
 
 .search-bar{
