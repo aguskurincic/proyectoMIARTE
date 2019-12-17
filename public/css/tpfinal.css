@@ -1,16 +1,8 @@
 * {box-sizing:border-box}
 
 body{
-<<<<<<< HEAD
-  /* display: flex; */
-  width: 99%;
-  height: 100%;
-  margin: 10px 10px;
-  background-color: #daa02e
-=======
-  background-color: #263f44;
-  padding-top: 70px; /* tiene que coincidir con la altura del header para poder compensar.*/
->>>>>>> 4fcfc2b5b812492029230d1160de17c681f7f30a
+  background-color: #f0efe7;
+  padding-top: 70px; /* Tiene que coincidir con la altura del nav bar para compensar*/
 }
 ul {
   padding: 0px 0px;
@@ -153,7 +145,7 @@ header {
   justify-content: space-around;
 }
 #colorbtn{
-  
+
 }
 
 .container-login {
