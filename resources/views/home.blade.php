@@ -27,6 +27,7 @@
         <h4 class="name">{{$product->name}}</h4>
         <p class="description">{{$product->description}}</p>
         <p class="price">Precio: {{$product->price}}$</p>
+        
         <form class="" action="/addtocarrito" method="post">
           @csrf
           <input type="hidden" name="id" value="{{$product->id}}">

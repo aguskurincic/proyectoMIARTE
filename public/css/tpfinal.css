@@ -1,8 +1,10 @@
 * {box-sizing:border-box}
 
 body{
+
   background-color: #f0efe7;
   padding-top: 70px; /* Tiene que coincidir con la altura del nav bar para compensar*/
+
 }
 ul {
   padding: 0px 0px;
@@ -34,14 +36,21 @@ header {
 
 #carritovista {
   display: flex;
-  justify-content: center;
-  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
 }
 
 #imgcart {
   display: flex;
   justify-content:center;
   width: 100%;
+}
+
+.fotoperfil {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 
 /* #img1carr {
@@ -93,9 +102,10 @@ header {
 #imgperfil {
   display: flex;
   justify-content: flex-end;
-  /* height: 50%;
-  width: 50%; */
-  border-radius: 1500px;
+  border-radius: 50%;
+  height: 300px;
+  width: 300px;
+  padding-left: 20px;
 }
 
 #linksfooter{

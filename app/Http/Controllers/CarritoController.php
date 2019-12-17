@@ -18,9 +18,17 @@ class CarritoController extends Controller
     {
       $items = Carrito::where("user_id", Auth::user()->id)->where("status", 0)->get();
 
-      return view('cart', compact('items'));
+      $total = 0;
+     foreach ($items as $item) {
+      $total += $item->price;
+     }
+
+     return view('cart', compact('total', 'items'));
     }
 
+    public function comprar (){
+      return view('finalizarcompra');
+    }
     /**
      * Show the form for creating a new resource.
      *
@@ -62,6 +70,9 @@ class CarritoController extends Controller
       return redirect('/');
     }
 
+    // public function total($totalcarrito){
+    //   $totalcarrito->
+    // }
     /**
      * Display the specified resource.
      *

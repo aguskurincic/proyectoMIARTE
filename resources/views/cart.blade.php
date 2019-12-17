@@ -14,28 +14,31 @@
         <h4 class="name">{{$product->name}}</h4>
         <p class="description">{{$product->description}}</p>
         <p class="price">Precio: {{$product->price}}$</p>
-        <form class="" action="/sacarDeCarrito" method="post">
+        <div class="botoneditarperfil">
+          <form class="" action="/sacarDeCarrito" method="post">
           @csrf
-          <input type="hidden" name="id" value="{{$product->id}}">
-          <button type="submit" class="btn btn-success">Comprar</a>
+          <!-- <input type="hidden" name="id" value="{{$product->id}}">
+          <button type="submit" class="btn btn-success">Comprar</a> -->
 
           <input type="hidden" name="id" value="{{$product->id}}">
           <button type="submit" class="btn btn-danger">Sacar de carrito</a>
         </form>
-
+      </div>
 
       </article>
+
     @empty
       <p>No hay productos disponibles</p>
     @endforelse
 
-    {{-- <form class="" action="/comprar" method="post">
+    <article class="">
+      <h2>Total:{{$total}}</h2>
+      <form class="" action="/finalizarcompra" method="post">
       @csrf
-      <input type="hidden" name="id" value="{{$product->id}}">
+      <input type="hidden" name="id" value="">
       <button type="submit" class="btn btn-success">Comprar</a>
-    </form> --}}
-
-  <!-- {{$items->total($items)}} -->
+        </article>
+    </form>
 
 
 
