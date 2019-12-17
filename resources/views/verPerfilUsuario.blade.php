@@ -43,7 +43,7 @@
           </div>
         </article>
           @empty
-          <h2>No hay Productos Cargados por este Usuario</h2>
+          <h2>No tenes Productos cargados</h2>
           <br>
           <br>
           @endforelse

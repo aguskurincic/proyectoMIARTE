@@ -19,7 +19,7 @@
 </form>
 </article>
 @empty
-<h2>El usuario no ha seleccionado Favoritos</h2>
+<h2>No has seleccionado ningún producto favorito.</h2>
 @endforelse
 
 </div>
