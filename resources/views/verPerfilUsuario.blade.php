@@ -38,7 +38,6 @@
           <h4 class="name">{{$producto->name}}</h4>
           <p class="description">{{$producto->description}}</p>
           <p class="price">Precio: {{$producto->price}}$</p>
-
           <div class="botoneditarperfil" >
             <form class="buttoncolor" action="/editarProducto" method="post">
             @csrf

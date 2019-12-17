@@ -14,6 +14,7 @@
     <form class="" action="/addtocarrito" method="post">
       @csrf
       <input type="hidden" name="id" value="{{$producto->id}}">
+      <input type="number" name="quantity" min='0' value="">
       <button type="submit" class="btn btn-success">Agregar al carrito</a>
     </form>
     <form class="" action="/verProducto" method="post">

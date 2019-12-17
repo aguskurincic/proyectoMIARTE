@@ -27,16 +27,19 @@
         <h4 class="name">{{$product->name}}</h4>
         <p class="description">{{$product->description}}</p>
         <p class="price">Precio: {{$product->price}}$</p>
+        <div id="botones">
         <form class="" action="/addtocarrito" method="post">
           @csrf
           <input type="hidden" name="id" value="{{$product->id}}">
+          <input type="number" name="quantity" min='0' value="">
           <button type="submit" class="btn btn-success">Agregar al carrito</a>
         </form>
         <form class="" action="/verProducto" method="post">
           @csrf
           <input type="hidden" name="id" value="{{$product->id}}">
-          <button type="submit" class="btn btn-warning">Ver Mas</a>
+          <button  type="submit" class="btn btn-warning">Ver Mas</a>
         </form>
+        </div>
         <!-- <a href="verProducto" class="btn btn-success">Ver Mas</a> -->
       </article>
 

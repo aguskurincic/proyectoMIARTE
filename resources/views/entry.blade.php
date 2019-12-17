@@ -18,17 +18,21 @@
 
         <!-- Wrapper for slides -->
 
-          <div class="carousel-inner" id="caruselbb">
+          <div class="carousel-inner" >
               <div class="item active">
-                <img src="/img/carrusel 1.jpg" alt="" id="img1carr">
+                <img src="/img/carrusel1.jpg" alt="" style="width:100%;">
               </div>
 
               <div class="item">
-                <img src="/img/airbaglibertad.jpg" alt="" style="width:100%;">
+                <img src="/img/carrusel2.jpg" alt="" style="width:100%;">
               </div>
 
               <div class="item">
-                <img src="/img/lalibrava.jpg" alt="" style="width:100%;">
+                <img src="/img/carrusel3.jpg" alt="" style="width:100%;">
+              </div>
+
+              <div class="item">
+                <img src="/img/carrusel4.jpg" alt="" style="width:100%;">
               </div>
             </div>
 
