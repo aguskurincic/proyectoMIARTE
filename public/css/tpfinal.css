@@ -139,6 +139,23 @@ header {
   justify-content: center;
 }
 
+#productoperfilusuario {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.botoneditarperfil{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+#colorbtn{
+  
+}
+
 .container-login {
   display: flex;
   justify-content: center;

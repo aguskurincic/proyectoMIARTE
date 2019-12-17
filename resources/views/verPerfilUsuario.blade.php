@@ -18,17 +18,18 @@
     </article>
 
 
-    <div class="buttons">
-      <h1>Mis Productos</h1>
 
+      <h1 align='center'>Mis Productos</h1>
+<div class="buttons" id="productoperfilusuario">
         @forelse ($productos as $producto)
-          <article class='producto'>
+          <article class='producto' >
           <img class='imagen' src="/storage/product/{{$producto->featured_img}}" alt="" id="verproductoimg">
           <h4 class="name">{{$producto->name}}</h4>
           <p class="description">{{$producto->description}}</p>
           <p class="price">Precio: {{$producto->price}}$</p>
 
-        <form class="buttoncolor" action="/editarProducto" method="post">
+          <div class="botoneditarperfil" >
+            <form class="buttoncolor" action="/editarProducto" method="post">
             @csrf
             <input type="hidden" name="id" value="{{$producto->id}}">
             <button type="submit" class="btn btn-warning" id="colorbtn">Editar Producto</a>
@@ -38,8 +39,8 @@
             @csrf
             <input type="hidden" name="id" value="{{$producto->id}}">
             <button type="submit" class="btn btn-danger" id="colorbtn">Eliminar Producto</a>
-
-          </form>
+            </form>
+          </div>
         </article>
           @empty
           <h2>No hay Productos Cargados por este Usuario</h2>
